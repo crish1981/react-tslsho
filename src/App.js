@@ -2,12 +2,13 @@ import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
 import './style.css';
 
-export default function App() {
+const App = () => {
   let c = 'krishna';
   const [values, b] = useState(c);
-  function testt() {
+  const testt = () => {
     b('use state krishna');
-  }
+  };
+
   return (
     <div>
       {values}
@@ -16,4 +17,6 @@ export default function App() {
       <input type="button" value="test" onClick={testt} />
     </div>
   );
-}
+};
+
+export default App;
